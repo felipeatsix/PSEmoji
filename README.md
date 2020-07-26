@@ -14,8 +14,8 @@ With PSEmoji module, you can have how many emojis available you want in your ter
 # install module
 Install-Module -Name PSEmoji -Repository PSGallery -Force -Verbose
 
-# import module
-Import-Module -Name PSEmoji -Verbose
+# import module (There's currently a known bug for importing modules when a script contains a custom powershell class, a workaround is to import by targeting the psm1 file)
+Import-Module "$env:SystemDrive\Program Files\WindowsPowerShell\Modules\PSEmoji\1.0.4\PSEmoji.psm1"
 ```
 ### How to access emojis
 The emojis will be available on nested properties in property <b>emojis</b> of <b>$PSEMOJI</b> variable
