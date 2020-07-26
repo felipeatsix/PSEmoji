@@ -12,10 +12,10 @@ With PSEmoji module, you can have how many emojis available you want in your ter
 ### Installation
 ```PowerShell
 # install module
-Install-Module PSEmoji -PSRepository PSGallery -Force -Verbose
+Install-Module -Name PSEmoji -PSRepository PSGallery -Force -Verbose
 
 # import module
-Import-Module PSEmoji -Verbose
+Import-Module -Name PSEmoji -Verbose
 ```
 ### How to access emojis
 The emojis will be available on nested properties in property <b>emojis</b> of <b>$PSEMOJI</b> variable
