@@ -8,9 +8,7 @@ So with that said, all you need to do is some UTF-32 encoding to display your em
 
 With PSEmoji module, you can have how many emojis available you want in your terminal, organized the way you want, and anywhere you are!, that's cool right? so this is how it works.
 ### Installation
-
 <a href=https://www.powershellgallery.com/packages/PSEmoji/1.0.1>PSGAllery</a>
-
 ```PowerShell
 # install module
 Install-Module PSEmoji -PSRepository PSGallery -Force -Verbose
