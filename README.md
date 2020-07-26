@@ -22,6 +22,6 @@ Import-Module PSEmoji -Verbose
 After you install and import PSEmoji module, this will export a new variable <b>$PSEMOJI</b> and 6 Powershell functions.
 The $PSEMOJI variable is an object instance of a custom class <b>psemoji</b> and this is what you'll use for manipulating and using your emojis.  
 There are 4 functions for manipulating $PSEMOJI:  
-```PowerShell
-# New-PSEmojiCategory
+
+### New-PSEmojiCategory
 ![new-category](/media/New-PSEmojiCategory.png)
