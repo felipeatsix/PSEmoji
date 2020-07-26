@@ -1,3 +1,21 @@
+<#
+.SYNOPSIS
+    Creates a new emoji category.
+
+.DESCRIPTION
+    Adds a new master property to UnicodeJson.json file.
+
+.PARAMETER Name
+    Provides a new emoji category name.
+
+.EXAMPLE
+    New-PSEmojiCategory -Name space
+    This command will create a new emoji category of name 'space'.
+
+.NOTES
+    Author: Felipe de Souza Santos
+    Date: 07/26/2020
+#>
 function New-PSEmojiCategory {
     param (
         [Parameter(Mandatory = $true, ValueFromPipeline = $true)]

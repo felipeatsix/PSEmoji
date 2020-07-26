@@ -1,3 +1,21 @@
+<#
+.SYNOPSIS
+    Removes an emoji category.
+
+.DESCRIPTION
+    Removes a master property from UnicodeJson.json file.
+
+.PARAMETER Name
+    Provides an emoji category name to be removed.
+
+.EXAMPLE
+    Remove-PSEmojiCategory -Name space
+    This command will remove an emoji category of name 'space'.
+
+.NOTES
+    Author: Felipe de Souza Santos
+    Date: 07/26/2020
+#>
 function Remove-PSEmojiCategory {
     param (
         [Parameter(Mandatory = $true, ValueFromPipeline = $true)]

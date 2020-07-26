@@ -1,3 +1,24 @@
+<#
+.SYNOPSIS
+    Removes an emoji from an emoji category.
+
+.DESCRIPTION
+    Removes a value from a nested property from UnicodeJson.json file.
+
+.PARAMETER EmojiCategory
+    Provides an emoji category name to remove the emoji from.
+
+.PARAMETER EmojiName
+    Provides the emoji name to be removed.
+
+.EXAMPLE
+    Remove-PSEmoji -EmojiCategory space -EmojiName saturn
+    This command will remove the emoji of name 'saturn' from the emoji category 'space'
+
+.NOTES
+    Author: Felipe de Souza Santos
+    Data: 07/26/2020
+#>
 function Remove-PSEmoji {
     Param (        
         [Parameter(Mandatory = $true)]
@@ -36,7 +57,7 @@ function Remove-PSEmoji {
         catch { throw }
     }
     END {
-        $PSEMOJI.refresh()
+        Write-Output $output
         return $($PSEMOJI.refresh())
     }
 }
