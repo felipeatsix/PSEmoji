@@ -49,7 +49,15 @@ Export-PSEmojiUnicodeJson -OutFilePath "[file system path of your choice]"
 # Import your emojis
 Import-PSEmojiUnicodeJson -Path "[path to your EmojiUnicode.json file]"
 ```
+
+### Opening unicode charts on a web browser
+The <b>$PSEMOJI</b> object contains a method <b>UnicodeCharts_Open()</b> which will pop up your default browser and redirect you to a page with the emoji unicode chart so you can know which emoji unicode input to provide on Add-PSEmoji function.
+
+```Powershell
+$PSEMOJI.UnicodeCharts_Open()
+```
+
+# DEMO
+
 ### Creating new emoji category and adding a new emoji to it
 ![example](/media/new_category_example.png)
-
-### R
