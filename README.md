@@ -13,21 +13,27 @@ With PSEmoji module, you can have how many emojis available you want in your ter
 ```PowerShell
 # install module
 Install-Module PSEmoji -PSRepository PSGallery -Force -Verbose
-
 # import module
 Import-Module PSEmoji -Verbose
 
 ```
-### Usage
+### Public functions
 After you install and import PSEmoji module, this will export a new variable <b>$PSEMOJI</b> and 6 Powershell functions.
 The $PSEMOJI variable is an object instance of a custom class <b>psemoji</b> and this is what you'll use for manipulating and using your emojis.  
-There are 4 functions for manipulating $PSEMOJI:  
+There are 4 functions for manipulating <b>$PSEMOJI</b>:
 
-### New-PSEmojiCategory
-![new-category](/media/New-PSEmojiCategory.png)
+```Powershell
+# Adds new emojis
+Add-PSEmoji
 
-### Add-PSEmoji
-![add-psemoji](/media/Add-PSEmoji.png)
+# Create new emoji category
+New-PSEmojiCategory
 
-### Acessing emojis
-![acessing](/media/accessing_emojis.png)
+# Removes existent emojis
+Remove-PSEmoji
+
+# Removes existent emoji category
+Remove-PSEmojiCategory
+```
+### Creating new emoji category and adding a new emoji to it
+![example1](/media/usage_example.png)
