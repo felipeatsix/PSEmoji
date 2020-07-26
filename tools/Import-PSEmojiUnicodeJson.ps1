@@ -4,7 +4,7 @@ function Import-PSEmojiUnicodeJson {
         [Parameter(Mandatory = $true, ValueFromPipeline = $true)]
         [ValidateScript( {
                 $(Test-Path $PSItem) -and
-                $PSItem -eq 'EmojiUnicode.json'
+                $PSItem -like '*EmojiUnicode.json'                
             })]
         $Path
     )
@@ -24,5 +24,6 @@ function Import-PSEmojiUnicodeJson {
     }
     END {
         Write-Output $output
+        return $($PSEMOJI.refresh())
     }
 }

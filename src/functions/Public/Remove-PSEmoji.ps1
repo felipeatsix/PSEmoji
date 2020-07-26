@@ -1,7 +1,10 @@
 function Remove-PSEmoji {
     Param (        
         [Parameter(Mandatory = $true)]
-        [emojicategories]$EmojiCategory,
+        [ValidateScript({
+            $PSEMOJI.emojis.psobject.properties.name -contains $PSItem
+        })]
+        [string]$EmojiCategory,
         
         [Parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]
@@ -33,6 +36,7 @@ function Remove-PSEmoji {
         catch { throw }
     }
     END {
-        Write-Output $output
+        $PSEMOJI.refresh()
+        return $($PSEMOJI.refresh())
     }
 }

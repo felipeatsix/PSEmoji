@@ -1,7 +1,9 @@
 function New-PSEmojiCategory {
     param (
         [Parameter(Mandatory = $true, ValueFromPipeline = $true)]
-        [ValidateNotNullOrEmpty()]
+        [ValidateScript({
+            $PSEMOJI.emojis.psobject.properties.name -notcontains $PSItem
+        })]
         [string]$Name
     )
     BEGIN {        
@@ -15,7 +17,7 @@ function New-PSEmojiCategory {
             MemberType  = 'NoteProperty'
             InputObject = $unicode
             Name        = $Name
-            Value       = $null
+            Value       = [pscustomobject]@{}
             Force       = $true
         }
         $output = [pscustomobject]@{
@@ -26,25 +28,18 @@ function New-PSEmojiCategory {
     PROCESS {
         try {
             Add-Member @params
-            $setContent.Path = $UNICODE_JSON   
-            $setContent.Value = $unicode | ConvertTo-Json
         }
         catch { throw }
         try {
+            $setContent.Path = $UNICODE_JSON   
+            $setContent.Value = $unicode | ConvertTo-Json
             Set-Content @setContent
             $output.category_added = $true
         }        
         catch { throw }
-        $enum = [emojicategories].GetEnumNames()
-        $enum = $enum -join ';'
-        $setContent.Path = $PSEMOJI_CATEGORIES
-        $setContent.Value = $enum
-        try {
-            Set-Content @setContent
-        }
-        catch { throw }
     }
     END {
-        Write-Output $output        
+        Write-Output $output
+        return $($PSEMOJI.refresh())
     }
 }

@@ -1,7 +1,10 @@
 function Add-PSEmoji {
     Param (        
         [Parameter(Mandatory = $true)]    
-        [emojicategories]$EmojiCategory,
+        [ValidateScript({
+            $PSEMOJI.emojis.psobject.properties.name -contains $PSItem
+        })]
+        $EmojiCategory,
         
         [Parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]
@@ -23,6 +26,7 @@ function Add-PSEmoji {
             InputObject = $unicode.$EmojiCategory
             Name        = $EmojiName
             Value       = $EmojiUnicode
+            Force       = $true
         }
         $output = [pscustomobject]@{
             category    = $EmojiCategory
@@ -44,5 +48,6 @@ function Add-PSEmoji {
     }
     END {
         Write-Output $output
+        return $($PSEMOJI.refresh())
     }
 }

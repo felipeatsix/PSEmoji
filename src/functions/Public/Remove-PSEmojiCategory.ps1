@@ -2,7 +2,10 @@ function Remove-PSEmojiCategory {
     param (
         [Parameter(Mandatory = $true, ValueFromPipeline = $true)]
         [ValidateNotNullOrEmpty()]
-        [emojicategories]$Name
+        [ValidateScript({
+            $PSEMOJI.emojis.psobject.properties.name -contains $PSItem
+        })]
+        [string]$Name
     )
     BEGIN { 
         $unicode = Get-Content $UNICODE_JSON | ConvertFrom-Json
@@ -25,16 +28,9 @@ function Remove-PSEmojiCategory {
             $output.category_removed = $true
         }
         catch { throw }
-        $enum = [emojicategories].GetEnumNames() | Where-Object { $_ -ne $Name }
-        $enum = $enum -join ';'
-        $setContent.Path = $PSEMOJI_CATEGORIES
-        $setContent.Value = $enum
-        try {
-            Set-Content @setContent
-        }
-        catch { throw }
     }
     END {
         Write-Output $output
+        return $($PSEMOJI.refresh())
     }
 }
