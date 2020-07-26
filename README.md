@@ -24,4 +24,3 @@ The $PSEMOJI variable is an object instance of a custom class <b>psemoji</b> and
 There are 4 functions for manipulating $PSEMOJI:  
 ```PowerShell
 # New-PSEmojiCategory
-![image](/media/New-PSEmojiCategory.png)
