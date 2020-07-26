@@ -28,3 +28,6 @@ There are 4 functions for manipulating $PSEMOJI:
 
 ### Add-PSEmoji
 ![add-psemoji](/media/Add-PSEmoji.png)
+
+### Acessing emojis
+![acessing](/media/accessing_emojis.png)
