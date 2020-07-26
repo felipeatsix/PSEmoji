@@ -1,4 +1,6 @@
 # PSEmoji
+[![PowershellGallery](https://img.shields.io/powershellgallery/v/PSCognitiveService.svg)](https://www.powershellgallery.com/packages/PSEmoji/1.0.1)
+
 Using emojis with Powershell has never been more fun and easy! 
 But, what's the excitement about it? well if you have watched <a href="https://www.youtube.com/watch?v=8gw0rXPMMPE">this Microsoft new windows terminal release trailer</a> you know what I'm saying right?!
 
@@ -8,7 +10,6 @@ So with that said, all you need to do is some UTF-32 encoding to display your em
 
 With PSEmoji module, you can have how many emojis available you want in your terminal, organized the way you want, and anywhere you are!, that's cool right? so this is how it works.
 ### Installation
-<a href=https://www.powershellgallery.com/packages/PSEmoji/1.0.1>PSGAllery</a>
 ```PowerShell
 # install module
 Install-Module PSEmoji -PSRepository PSGallery -Force -Verbose
