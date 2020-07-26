@@ -3,7 +3,7 @@
     Add a new emoji to a given emoji category.
 
 .DESCRIPTION
-    Updates the UnicodeJson.json for adding new emojis. 
+    Adds a new value to a nested property from UnicodeJson.json file.
 
 .PARAMETER EmojiCategory
     Provides a new emoji category name.
