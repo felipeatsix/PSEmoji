@@ -1,4 +1,6 @@
 # PSEmoji
+[![PowershellGallery](https://img.shields.io/powershellgallery/v/PSCognitiveService.svg)](https://www.powershellgallery.com/packages/PSEmoji/1.0.1)
+
 Using emojis with Powershell has never been more fun and easy! 
 But, what's the excitement about it? well if you have watched <a href="https://www.youtube.com/watch?v=8gw0rXPMMPE">this Microsoft new windows terminal release trailer</a> you know what I'm saying right?!
 
@@ -10,10 +12,10 @@ With PSEmoji module, you can have how many emojis available you want in your ter
 ### Installation
 ```PowerShell
 # install module
-Install-Module PSEmoji -PSRepository PSGallery -Force -Verbose
+Install-Module -Name PSEmoji -Repository PSGallery -Force -Verbose
 
 # import module
-Import-Module PSEmoji -Verbose
+Import-Module -Name PSEmoji -Verbose
 ```
 ### How to access emojis
 The emojis will be available on nested properties in property <b>emojis</b> of <b>$PSEMOJI</b> variable
