@@ -9,25 +9,39 @@ So with that said, all you need to do is some UTF-32 encoding to display your em
 With PSEmoji module, you can have how many emojis available you want in your terminal, organized the way you want, and anywhere you are!, that's cool right? so this is how it works.
 
 ### Installation
-
 ```PowerShell
 # install module
 Install-Module PSEmoji -PSRepository PSGallery -Force -Verbose
 
 # import module
 Import-Module PSEmoji -Verbose
-
 ```
-### Usage
-After you install and import PSEmoji module, this will export a new variable <b>$PSEMOJI</b> and 6 Powershell functions.
+
+### How to access emojis
+The emojis will be available on nested properties in property <b>emojis</b> of <b>$PSEMOJI</b> variable
+```Powershell
+# Syntax example: $PSEMOJI.emojis.emoji-category.emoji-name
+$PSEMOJI.emojis.face.happy
+```
+
+### Creating new emoji category and adding a new emoji to it
+![example1](/media/usage_example.png)
+
+### Public functions
+After you install and import <b>PSEmoji</b> module, this will export a new variable <b>$PSEMOJI</b> and 6 Powershell functions.
 The $PSEMOJI variable is an object instance of a custom class <b>psemoji</b> and this is what you'll use for manipulating and using your emojis.  
-There are 4 functions for manipulating $PSEMOJI:  
+There are 4 functions for manipulating <b>$PSEMOJI</b>:
 
-### New-PSEmojiCategory
-![new-category](/media/New-PSEmojiCategory.png)
+```Powershell
+# Adds new emojis
+Add-PSEmoji
 
-### Add-PSEmoji
-![add-psemoji](/media/Add-PSEmoji.png)
+# Create new emoji category
+New-PSEmojiCategory
 
-### Acessing emojis
-![acessing](/media/accessing_emojis.png)
+# Removes existent emojis
+Remove-PSEmoji
+
+# Removes existent emoji category
+Remove-PSEmojiCategory
+```
