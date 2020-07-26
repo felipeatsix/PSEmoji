@@ -25,7 +25,7 @@ $PSEMOJI.emojis.face.happy
 ```
 
 ### Creating new emoji category and adding a new emoji to it
-![example1](/media/usage_example.png)
+![example](/media/new_category_example.png)
 
 ### Public functions
 After you install and import <b>PSEmoji</b> module, this will export a new variable <b>$PSEMOJI</b> and 6 Powershell functions.
