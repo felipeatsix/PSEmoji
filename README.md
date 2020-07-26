@@ -43,7 +43,7 @@ Remove-PSEmoji -EmojiCategory <string> -EmojiName <string>
 Remove-PSEmojiCategory -Name <string>
 ```
 ### Importing / Exporting
-There'll be two functions available for importing/exporting your emojis so you can use it everywhere!
+There'll be two functions available for importing/exporting your emojis so you can keep your created emojis with you everywhere!
 
 ```Powershell
 # Export your emojis
