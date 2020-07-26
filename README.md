@@ -20,7 +20,7 @@ Import-Module PSEmoji -Verbose
 ### How to access emojis
 The emojis will be available on nested properties in property <b>emojis</b> of <b>$PSEMOJI</b> variable
 ```Powershell
-# Syntax example: $PSEMOJI.emojis.emoji-category.emoji-name
+# Syntax example: $PSEMOJI.emojis.[emoji-category].[emoji-name]
 $PSEMOJI.emojis.face.happy
 ```
 
