@@ -25,3 +25,6 @@ There are 4 functions for manipulating $PSEMOJI:
 
 ### New-PSEmojiCategory
 ![new-category](/media/New-PSEmojiCategory.png)
+
+### Add-PSEmoji
+![add-psemoji](/media/Add-PSEmoji.png)
