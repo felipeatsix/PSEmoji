@@ -24,9 +24,6 @@ The emojis will be available on nested properties in property <b>emojis</b> of <
 $PSEMOJI.emojis.face.happy
 ```
 
-### Creating new emoji category and adding a new emoji to it
-![example](/media/new_category_example.png)
-
 ### Public functions
 After you install and import <b>PSEmoji</b> module, this will export a new variable <b>$PSEMOJI</b> and 6 Powershell functions.
 The $PSEMOJI variable is an object instance of a custom class <b>psemoji</b> and this is what you'll use for manipulating and using your emojis.  
@@ -45,3 +42,6 @@ Remove-PSEmoji
 # Removes existent emoji category
 Remove-PSEmojiCategory
 ```
+
+### Creating new emoji category and adding a new emoji to it
+![example](/media/new_category_example.png)
