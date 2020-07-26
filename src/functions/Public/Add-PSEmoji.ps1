@@ -6,7 +6,7 @@
     Adds a new value to a nested property from UnicodeJson.json file.
 
 .PARAMETER EmojiCategory
-    Provides a new emoji category name.
+    Provides an existent emoji category name to add the emoji to.
 
 .PARAMETER EmojiName
     Provides a new emoji name.
