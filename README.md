@@ -12,6 +12,7 @@ With PSEmoji module, you can have how many emojis available you want in your ter
 ```PowerShell
 # install module
 Install-Module PSEmoji -PSRepository PSGallery -Force -Verbose
+
 # import module
 Import-Module PSEmoji -Verbose
 ```
