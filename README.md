@@ -16,9 +16,17 @@ Install-Module PSEmoji -PSRepository PSGallery -Force -Verbose
 # import module
 Import-Module PSEmoji -Verbose
 
+### How to access emojis
+The emojis will be available on nested properties in property <b>emojis</b> of <b>$PSEMOJI</b> variable
+```Powershell
+# Syntax example: $PSEMOJI.emojis.emoji-category.emoji-name
+$PSEMOJI.emojis.face.happy
+
+### Creating new emoji category and adding a new emoji to it
+![example1](/media/usage_example.png)
 ```
 ### Public functions
-After you install and import PSEmoji module, this will export a new variable <b>$PSEMOJI</b> and 6 Powershell functions.
+After you install and import <b>PSEmoji</b> module, this will export a new variable <b>$PSEMOJI</b> and 6 Powershell functions.
 The $PSEMOJI variable is an object instance of a custom class <b>psemoji</b> and this is what you'll use for manipulating and using your emojis.  
 There are 4 functions for manipulating <b>$PSEMOJI</b>:
 
@@ -35,5 +43,3 @@ Remove-PSEmoji
 # Removes existent emoji category
 Remove-PSEmojiCategory
 ```
-### Creating new emoji category and adding a new emoji to it
-![example1](/media/usage_example.png)
