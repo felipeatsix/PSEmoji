@@ -9,10 +9,10 @@
 @{
 
     # Script module or binary module file associated with this manifest.
-    RootModule = 'C:\Program Files\WindowsPowerShell\Modules\PSEmoji\PSEmoji.psm1'
+    RootModule = 'C:\Program Files\WindowsPowerShell\Modules\PSEmoji\1.0.5\PSEmoji.psm1'
     
     # Version number of this module.
-    ModuleVersion = '1.0.2'
+    ModuleVersion = '1.0.5'
     
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -108,10 +108,10 @@
             # LicenseUri = ''
     
             # A URL to the main website for this project.
-            # ProjectUri = ''
+            ProjectUri = 'https://github.com/felipesix/PSEmoji'
     
             # A URL to an icon representing this module.
-            # IconUri = ''
+            IconUri = 'https://i.pinimg.com/originals/85/65/50/856550aa773911d00b76b24aaa4bc467.png'
     
             # ReleaseNotes of this module
             # ReleaseNotes = ''
