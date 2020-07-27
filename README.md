@@ -21,8 +21,7 @@ Import-Module -Name PSEmoji
 ```
 ### How to access your emojis
 After you install and import <b>PSEmoji</b> module, this will export a new variable <b>$PSEMOJI</b>.  
-The <b>$PSEMOJI</b> variable is an object instance of a custom class <b>psemoji</b> and this is what you'll use for accessing your emojis.  
-The emojis will be stored on nested properties of property emojis.
+The <b>$PSEMOJI</b> variable is an object instance of a custom class <b>psemoji</b> and this is what you'll use for accessing your emojis. The emojis will be stored on nested properties of property emojis.
 ```Powershell
 # Syntax example: $PSEMOJI.emojis.[emoji-category].[emoji-name]
 $PSEMOJI.emojis.face.happy
