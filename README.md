@@ -17,8 +17,8 @@ Install-Module -Name PSEmoji -Repository PSGallery
 # import module
 Import-Module -Name PSEmoji
 ```
-### How to access emojis
-The emojis will be available on nested properties in property <b>emojis</b> of <b>$PSEMOJI</b> variable
+### How to access your emojis
+The emojis will be available on nested properties of property <b>emojis</b> in <b>$PSEMOJI</b> variable
 ```Powershell
 # Syntax example: $PSEMOJI.emojis.[emoji-category].[emoji-name]
 $PSEMOJI.emojis.face.happy
