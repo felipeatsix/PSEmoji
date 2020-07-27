@@ -6,7 +6,8 @@ But, what's the excitement about it? well if you have watched <a href="https://w
 
 That's right, amongst all amazing features Microsoft has been providing with the new windows terminal one is the ability to render beatiful emojis!
 
-So with that said, all you need to do is some UTF-32 encoding to display your emojis, the downside is that you would have to do it everytime, you could of course save a static variable in your Powershell profile, or even creating your own function for it, that's fine. 
+### Why I created this at first place?
+In order to display emojis in your terminal, you must do some UTF-32 encoding, the downside is that you would have to do it everytime, you could of course save a static variable in your Powershell profile, or even creating your own function for it, that's fine, but not super straight forward right? 
 
 ### So, why should I use this?
 Because its super fun and easy! you can have how many emojis available you want in your terminal, and you can organize them in categories the way you want, and you can easily carry them with you anywhere you are!, that's cool right? so this is how it works.
