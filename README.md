@@ -6,9 +6,10 @@ But, what's the excitement about it? well if you have watched <a href="https://w
 
 That's right, amongst all amazing features Microsoft has been providing with the new windows terminal one is the ability to render beatiful emojis!
 
-So with that said, all you need to do is some UTF-32 encoding to display your emojis, the downside is that you would have to do it everytime, you could of course save a static variable in your Powershell profile, or even creating your own function for it, that's fine, but PSEmoji module brings it to the next level! 
+So with that said, all you need to do is some UTF-32 encoding to display your emojis, the downside is that you would have to do it everytime, you could of course save a static variable in your Powershell profile, or even creating your own function for it, that's fine. 
 
-With PSEmoji module, you can have how many emojis available you want in your terminal, organized the way you want, and anywhere you are!, that's cool right? so this is how it works.
+### So, why should I use this?
+Because its super fun and easy! you can have how many emojis available you want in your terminal, and you can organize them in categories the way you want, and you can easily carry them with you anywhere you are!, that's cool right? so this is how it works.
 ### Installation
 ```PowerShell
 # install module
