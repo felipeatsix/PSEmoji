@@ -63,3 +63,7 @@ $PSEMOJI.UnicodeCharts_Open()
 
 ### Creating new emoji category and adding a new emoji to it
 ![example](/media/new_category_example.png)
+### Running tests with your emojis
+![tests](/media/gallery_tests.png)
+### Monitoring Computer RAM
+![testRam](/media/gallery_checkmark.png)
