@@ -10,7 +10,9 @@ That's right, amongst all amazing features Microsoft has been providing with the
 In order to display emojis in your terminal, you must do some UTF-32 encoding, the downside is that you would have to do it everytime, you could of course save a static variable in your Powershell profile, or even creating your own function for it, that's fine, but not super straight forward right? 
 
 ### So, why should I use this?
-Because its super fun and easy! you can have how many emojis available you want in your terminal, and you can organize them in categories the way you want, and you can easily carry them with you anywhere you are!, how cool is that? read through this document to see how it works!
+Although emojis won't add any greater impact in your scripts (despite the fun), they can provide a much better visualization for long running interactive tests, of course you can tell me "Naah, I don't care about it" well, it's ok, you're just not a happy person (just kidding).   
+Now, if you're going to use emojis in your Powershell scripts anyways, then I'd say this module has been made for you!   
+You can have how many emojis available you want in your terminal, and you can organize them in categories the way you want, and you can easily carry them with you anywhere you are!
 ### Installation
 ```PowerShell
 # install module
