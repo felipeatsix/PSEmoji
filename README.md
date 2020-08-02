@@ -1,5 +1,5 @@
 # PSEmoji
-[![PowerShell Gallery Version](https://img.shields.io/powershellgallery/v/PSEmoji)](https://www.powershellgallery.com/packages/PSEmoji/1.0.5)
+![PowerShell Gallery Version](https://img.shields.io/powershellgallery/v/PSEmoji?style=flat) ![PowerShell Gallery](https://img.shields.io/powershellgallery/dt/PSEmoji?color=green&style=flat)
 
 Using emojis with Powershell has never been more fun and easy! 
 But, what's the excitement about it? well if you have watched <a href="https://www.youtube.com/watch?v=8gw0rXPMMPE">this Microsoft new windows terminal release trailer</a> you know what I'm saying right?!
