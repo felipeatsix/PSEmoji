@@ -1,7 +1,7 @@
 # PSEmoji
 [![PowerShell Gallery Version](https://img.shields.io/powershellgallery/v/PSEmoji?style=flat)](https://www.powershellgallery.com/packages/PSEmoji/1.0.5) [![PowerShell Gallery](https://img.shields.io/powershellgallery/dt/PSEmoji?color=green&style=flat)](https://www.powershellgallery.com/packages/PSEmoji/1.0.5)
 
-Render emojis on your scripts outputs :)
+Render emojis on your scripts outputs 🙂
 
 ### Installation
 ```PowerShell
